@@ -1,0 +1,404 @@
+/* Estilos Generales */
+
+/* Define el estilo base para todo el cuerpo de la página */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para el elemento header */
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el menú y el título */
+    background-color: #05747b;
+    color: #FFFFFF; /* Cambiado a blanco para contraste */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Estilo para el título y nombre en el header */
+.TituloNombre {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #05747b;
+    color: #303030;
+    /* align-items: flex-end; */ /* Comentado: Redundante, se usa align-items: center; */
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.menu{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #05747b;
+    color: #303030;
+    /* align-items: flex-end; */ /* Comentado: Redundante, se usa align-items: center; */
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.btnMenu {
+    font-weight: bold;
+    text-decoration: none;
+    color: #303030;
+    margin: 5px;
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+    .btnMenu:hover {
+        color: #fff;
+        background-color: #05747b;
+        transition: all 0.3s ease;
+    }
+
+
+
+/* Estilo para la sección de bienvenida */
+.uno {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background-color: #303030;
+    /* color: #303030; El color no es necesario- el contenido define su propio color */
+    /* padding-top: 10%; */
+}
+
+/* Contenedor central para contenido de secciones */
+.caja-central {
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+    border: 2px solid #05747b; /* Agrega un borde de 2px sólido de color negro */
+}
+
+/* Contenedor para la imagen de la cara dentro de la caja central */
+.caja-cara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #303030;
+
+}
+
+/* Estilo para la imagen de la cara */
+.cara {
+    border-radius: 50%; /* Simplificado a 50% para hacer un círculo */
+    height: 200px;
+    width: 200px; /* Asegura que la imagen sea circular */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+
+/* Contenedor para la presentación dentro de la caja central */
+.caja-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #05747b;
+    color: #FFFFFF; /* Cambiado a blanco para mejor contraste */
+    padding: 10px;
+}
+
+    /* Asegura que los textos dentro de caja-presentacion sean blancos */
+    .caja-presentacion h1, .caja-presentacion p {
+        color: #FFFFFF;
+    }
+
+/* Estilo para la sección "Acerca de Mi" */
+.dos {
+    background-color: #05747b;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* Texto en blanco para mejor contraste */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Contenedor para las aptitudes tecnológicas */
+.aptitudes {
+    width: 50%;
+}
+
+/* Lista de tecnologías con flexbox */
+.tech-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* Estilo para los íconos de tecnologías */
+.tech {
+    height: 90px;
+}
+
+/* Estilo para la sección de proyectos */
+.tres {
+    background-color: #303030;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+/* Contenedor para los proyectos individuales */
+.proyectos {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Añadido para que los proyectos se ajusten en pantallas pequeñas */
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.card {
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #424242; /* Añadido para diferenciar las tarjetas */
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+}
+
+    /* Estilo para las imágenes dentro de las tarjetas */
+    .card img {
+        width: 100%;
+        border-radius: 5px; /* Bordes redondeados para las imágenes */
+    }
+
+    /* Estilo para los enlaces dentro de las tarjetas y el footer */
+    .card a, footer a {
+        color: white;
+        text-decoration: none; /* Eliminado subrayado */
+    }
+
+        /* Efecto hover para los enlaces dentro de las tarjetas */
+        .card a:hover {
+            text-decoration: underline; /* Subrayado al pasar el cursor */
+        }
+
+/* Estilo para los íconos de redes sociales */
+.red-social {
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #05747b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+
+/* Contenedor para las redes sociales dentro del footer */
+.contacto {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrado vertical de las redes sociales */
+}
+
+/* Estilo para las líneas horizontales */
+hr {
+    border: none;
+    border-left: 1px solid #F2F2F2;
+    height: 40px;
+    margin: 0 10px; /* Espacio a los lados de las líneas */
+}
+
+/* Estilos para la sección de contacto */
+.cuatro {
+    background-color: #303030; /* Coincide con el fondo de .caja-central */
+    padding: 50px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2; /* Texto en color claro para contraste */
+}
+
+    /* Estilo para los títulos dentro de la sección de contacto */
+    .cuatro h2 {
+        margin-bottom: 1px;
+        color: #F2F2F2; /* Color destacado para el título */
+        font-size: 2em;
+    }
+
+/* Contenedor del formulario de contacto, reutiliza .caja-central */
+.caja-central.formulario-contacto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #05747b; /* Fondo similar a .caja-presentacion */
+    padding: 20px;
+    box-shadow: none; /* Elimina sombras adicionales */
+}
+
+/* Estilo para el formulario dentro de la sección de contacto */
+.cuatro form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para cada campo del formulario */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+    /* Estilo para las etiquetas de los campos */
+    .campo label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #FFFFFF; /* Mantener el texto en color blanco */
+    }
+
+    /* Estilo para los inputs y textarea del formulario */
+    .campo input,
+    .campo textarea {
+        padding: 10px;
+        margin: 0; /* Eliminar márgenes adicionales */
+        border: 1px solid #555; /* Borde gris oscuro */
+        background-color: #444; /* Fondo de los campos */
+        color: #FFFFFF; /* Texto blanco para mejor contraste */
+        border-radius: 5px; /* Bordes redondeados */
+        font-family: 'Open Sans', sans-serif; /* Mantiene la fuente original */
+        font-size: 16px; /* Tamaño de fuente consistente */
+    }
+
+        /* Estilo para los placeholders de los inputs y textarea */
+        .campo input::placeholder,
+        .campo textarea::placeholder {
+            color: #BBBBBB;
+        }
+
+        /* Estilo para los inputs y textarea al enfocar */
+        .campo input:focus,
+        .campo textarea:focus {
+            border-color: #777; /* Borde claro al enfocar */
+            outline: none; /* Eliminar el outline blanco */
+        }
+
+/* Estilo para el botón de enviar en el formulario */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #555; /* Fondo del boton */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    /* Efecto hover para el botón de enviar */
+    button[type="submit"]:hover {
+        background-color: #777; /* Efecto */
+    }
+
+/* Suaviza el scroll de la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1000px) {
+    /* Ajustes para el contenedor central en pantallas pequeñas */
+    .caja-central {
+        width: 90%;
+        height: auto; /* Ajustado para contenido flexible */
+        flex-direction: column;
+    }
+
+    /* Ajustes para la caja de la cara en pantallas pequeñas */
+    .caja-cara {
+        width: 100%;
+        height: auto; /* Ajustado para contenido flexible */
+    }
+
+    /* Ajustes para la presentación en pantallas pequeñas */
+    .caja-presentacion {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    /* Ajustes para las aptitudes en pantallas pequeñas */
+    .aptitudes {
+        width: auto;
+    }
+
+    /* Ajustes para la sección "Acerca de Mi" en pantallas pequeñas */
+    .dos {
+        height: auto;
+        padding: 0 10px 10px 10px;
+    }
+
+    /* Ajustes para la sección de proyectos en pantallas pequeñas */
+    .tres {
+        height: auto;
+    }
+
+    /* Ajustes para el contenedor de proyectos en pantallas pequeñas */
+    .proyectos {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    /* Ajustes para cada tarjeta de proyecto en pantallas pequeñas */
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Ajustes para los íconos de redes sociales en pantallas pequeñas */
+    .red-social {
+        margin: 0 10px 0 10px;
+    }
+
+    /* Ajustes para el formulario de contacto en pantallas pequeñas */
+    .caja-central.formulario-contacto {
+        width: 90%;
+    }
+
+    /* Ajustes para el contenedor de proyectos en pantallas pequeñas */
+    .proyectos {
+        flex-direction: column;
+    }
+
+
+    /* Estilo para los elementos de la lista del menú en pantallas pequeñas */
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
